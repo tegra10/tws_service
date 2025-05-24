@@ -172,6 +172,35 @@
     }
   }
 
+  // Tablet styles
+  @media (max-width: 1024px) {
+    padding: calc(55px + 1.75rem) 1.75rem 3.5rem;
+
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .skills-category {
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .skill-item {
+      .skill-icon {
+        width: 38px;
+        height: 38px;
+      }
+
+      .skill-name {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  // Mobile styles
   @media (max-width: 768px) {
     padding: calc(50px + 1.5rem) 1.5rem 3rem;
 
