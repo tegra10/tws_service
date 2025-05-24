@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "./components/_header.scss";
+@import "./components/_Descriptions.scss";
+@import "./pages/_Projects.scss";
+@import "./components/_Commenters.scss";
+@import "./components/_Form.scss";
+@import "./pages/_Comments.scss";
+@import "./pages/_Contact.scss";
+@import "./components/_Skills.scss";
