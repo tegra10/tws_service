@@ -20,12 +20,6 @@ export default function Contact() {
 
   const socialLinks = [
     {
-      name: "Email",
-      icon: FaEnvelope,
-      link: "mailto:tegkit30@gmail.com",
-      color: "#EA4335",
-    },
-    {
       name: "WhatsApp",
       icon: FaWhatsapp,
       link: "https://wa.me/+243812512180",
