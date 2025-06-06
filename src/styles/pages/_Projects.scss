@@ -34,7 +34,7 @@
     position: relative;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1.5rem;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,21 +42,40 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
+    .project-image {
       width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        45deg,
-        rgba(52, 152, 219, 0.1),
-        rgba(46, 204, 113, 0.1)
-      );
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
     }
 
     &:hover {
@@ -64,8 +83,14 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
       border-color: rgba(52, 152, 219, 0.5);
 
-      &::before {
-        opacity: 1;
+      .project-image {
+        img {
+          transform: scale(1.05);
+        }
+
+        &::after {
+          opacity: 1;
+        }
       }
 
       h2 {
@@ -129,7 +154,9 @@
     gap: 1.75rem;
 
     .project-card {
-      min-height: 250px;
+      .project-image {
+        height: 180px;
+      }
     }
   }
 
@@ -140,8 +167,12 @@
     gap: 1.5rem;
 
     .project-card {
-      padding: 1.5rem;
-      min-height: auto;
+      padding: 1.25rem;
+
+      .project-image {
+        height: 160px;
+        margin-bottom: 1.25rem;
+      }
 
       h2 {
         font-size: 1.25rem;
@@ -159,7 +190,11 @@
     gap: 1rem;
 
     .project-card {
-      padding: 1.25rem;
+      padding: 1rem;
+
+      .project-image {
+        height: 200px;
+      }
     }
   }
 }

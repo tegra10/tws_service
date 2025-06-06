@@ -1,0 +1,10 @@
+https://tegra-s-to-do.vercel.app/
+
+https://calculette-ashy.vercel.app/
+
+https://snake-attak.vercel.app/
+
+npm install sharp svgexport --save-dev
+
+
+demain avant tout je vais devoir comment par faire un npm i puis installer ça npm install sharp svgexport --save-dev

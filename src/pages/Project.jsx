@@ -5,24 +5,24 @@ import Header from "../components/Header";
 const projects = [
   {
     id: 1,
-    title: "Projet 1",
-    description: "Description du projet 1",
-    url: "/project/1",
-    image: "/images/projet1.jpg",
+    title: "Calculatrice",
+    description: "Une calculatrice simple et intuitive",
+    url: "https://calculette-ashy.vercel.app/",
+    image: "/imgs/projects/calculette.png",
   },
   {
     id: 2,
-    title: "Projet 2",
-    description: "Description du projet 2",
-    url: "/project/2",
-    image: "/images/projet2.jpg",
+    title: "Snake",
+    description: "Un jeu de serpent simple et amusant",
+    url: "https://snake-attak.vercel.app/",
+    image: "/imgs/projects/snakeGame.png",
   },
   {
     id: 3,
-    title: "Projet 3",
-    description: "Description du projet 3",
-    url: "/project/3",
-    image: "/images/projet3.jpg",
+    title: "To Do List",
+    description: "Une liste de tâches à faire",
+    url: "https://tegra-s-to-do.vercel.app/",
+    image: "/imgs/projects/todo.png",
   },
 ];
 

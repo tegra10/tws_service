@@ -4,7 +4,7 @@ import {
   FaHome,
   FaStar,
   FaProjectDiagram,
-  FaComments,
+  // FaComments,
   FaEnvelope,
   FaBars,
   FaTimes,
@@ -71,11 +71,11 @@ export default function Header() {
             <FaProjectDiagram /> Projects
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/comments" onClick={handleLinkClick}>
             <FaComments /> Comments
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/contact" onClick={handleLinkClick}>
             <FaEnvelope /> Contact

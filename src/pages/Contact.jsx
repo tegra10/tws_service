@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import {
-  FaEnvelope,
+  // FaEnvelope,
   FaWhatsapp,
   FaInstagram,
   FaLinkedinIn,
@@ -81,7 +81,7 @@ export default function Contact() {
         <div className="contact-content">
           <div className="profile-section">
             <div className="profile-image">
-              <img src="/path/to/your/photo.jpg" alt="Mon profil" />
+              <img src="imgs/profile/img.jpg" alt="Mon profil" />
             </div>
             <div className="social-links">
               {socialLinks.map((social) => (
