@@ -8,21 +8,21 @@ const projects = [
     title: "Calculatrice",
     description: "Une calculatrice simple et intuitive",
     url: "https://calculette-ashy.vercel.app/",
-    image: "/imgs/projects/calculette.png",
+    image: "/imgs/projects/calculette.PNG",
   },
   {
     id: 2,
     title: "Snake",
     description: "Un jeu de serpent simple et amusant",
     url: "https://snake-attak.vercel.app/",
-    image: "/imgs/projects/snakeGame.png",
+    image: "/imgs/projects/snakeGame.PNG",
   },
   {
     id: 3,
     title: "To Do List",
     description: "Une liste de tâches à faire",
     url: "https://tegra-s-to-do.vercel.app/",
-    image: "/imgs/projects/todo.png",
+    image: "/imgs/projects/todo.PNG",
   },
 ];
 
